@@ -6,4 +6,8 @@ Rails.application.routes.draw do
   delete '/users/:id', to: 'users#destroy'
 
   get '/books', to: 'books#index'
+  get '/books/:id', to: 'books#show'
+  post '/books', to: 'books#create'
+  update '/books/:id', to: 'books#update'
+  delete '/books/:id', to: 'books#destroy'
 end
