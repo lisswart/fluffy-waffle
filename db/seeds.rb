@@ -19,6 +19,7 @@ puts "seeding users..."
     email: Faker::Internet.unique.email,
     password_digest: Faker::Internet.unique.password
   )
+end
 
 Book.destroy_all
 
